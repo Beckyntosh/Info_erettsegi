@@ -15,7 +15,7 @@ def masodikFeladat():
     if (line[0] == city_code):
       ido = format_time(line)
       varos = line[0]
-      print("Második Feladat: A {0} városban az utolsó mérés ideje {1} volt.".format(varos, ido))
+      print("2. Feladat: A {0} városban az utolsó mérés ideje {1} volt.".format(varos, ido))
       break
 
 def min_hom(t):
@@ -35,12 +35,12 @@ def max_hom(t):
 def harmadikFeladat():
   cmin = min_hom(lines)
   cmax = max_hom(lines)
-  print("Harmadik Feladat:")
+  print("3. Feladat:")
   print("A minimum hőmérséklet {0} Celsius volt {1} városban {2} órakkor {3} szélerőséggel ".format(cmin[3].rstrip(), cmin[0], format_time(cmin), cmin[2]))
   print("A maximum hőmérséklet {0} Celsius volt {1} városban {2} órakkor {3} szélerőséggel ".format(cmax[3].rstrip(), cmax[0], format_time(cmax), cmax[2]))
 
 def negyedikFeladat():
-  print("Negyedik Feladat: ")
+  print("4. Feladat: ")
   szelcsend = []
   for line in lines:
     if line[2] == "00000":
