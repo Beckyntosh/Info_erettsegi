@@ -10,18 +10,20 @@ kategoria = k.readlines()'''
 def readFile(fileName1, fileName2):
 	print("")
 	print("1. Feladat: ")
+	print("Beolvasás")
 
 	with open(fileName1, "r") as f:
 		for line in f:
-			foglaltsag.append(line)
+			foglaltsag.append(line.strip())
 
 	with open(fileName2, "r") as k:
 		for line in k:
-			kategoria.append(line)
+			kategoria.append(line.strip())
 			#print(line)
 
 def masodikFeladat():
-	print("Második Feladat:")
+	print("")
+	print("2. Feladat:")
 
 	row = int(input("Kérem adja meg a sor számát: "))
 	column = int(input("Kérem adja meg a szék számát: "))
@@ -43,7 +45,7 @@ def harmadikFeladat():
 				sold += 1
 	#print(sold)
 	r = round(sold/total*100)
-	print("Az előadásra eddig {0} jegyet adtak el, ez a nézőtér {1}%-a".format(sold,r))
+	print("Az előadásra eddig {0} jegyet adtak el, ez a nézőtér {1}%-a.".format(sold,r))
 
 def negyedikOtodikFeladat():
 	print("")
@@ -83,7 +85,39 @@ def negyedikOtodikFeladat():
 	print("")
 	print("5. Feladat: ")
 	s = k1*5000+k2*4000+k3*3000+k4*2000+k5*1500
-	print("A bevétel összege:",s)
+	print("A bevétel összege: {0} HUF.".format(s))
+	#print(k1,k2,k3,k4,k5)
+
+#Negyedik feladat megoldás dictionary-vel
+def negyedikOtodikFeladatv2():
+	print("")
+	print("4. Feladat: ")
+	categories = {}
+	cat = []
+
+	for i,lines in enumerate(foglaltsag):
+		for j,chair in enumerate(lines):
+			if chair == "x":
+				if kategoria[i][j] not in categories:
+					#print(kategoria[i][j])
+					categories[kategoria[i][j]] = 1
+				else:
+					categories[kategoria[i][j]] += 1			
+	#print(categories)
+	maxc = 0
+	for c in categories:
+		if categories[c] > maxc:
+			cat = c
+			maxc = categories[c]
+	print("A legtöbb jegyet a {0}-es kategóriában adták el, összesen {1}-et.".format(cat,maxc))
+
+	print("")
+	print("5. Feladat: ")
+	#for c in categories:
+		#if c =="1"
+	s = categories["1"]*5000+categories["2"]*4000+categories["3"]*3000+categories["4"]*2000+categories["5"]*1500
+	print("A bevétel összege: {0} HUF.".format(s))
+
 
 def hatodikFeladat():
 	print("")
@@ -102,6 +136,7 @@ def hatodikFeladat():
 def hetedikFeladat():
 	print("")
 	print("7. Feladat: ")
+	print("Kiíratás")
 	rows = []
 	for i,lines in enumerate(foglaltsag):
 		for j,chair in enumerate(lines):
@@ -117,7 +152,8 @@ def main():
   readFile("foglaltsag.txt","kategoria.txt")
   masodikFeladat() 
   harmadikFeladat()
-  negyedikOtodikFeladat()
+  #negyedikOtodikFeladat()
+  negyedikOtodikFeladatv2()
   hatodikFeladat()
   hetedikFeladat()
 
