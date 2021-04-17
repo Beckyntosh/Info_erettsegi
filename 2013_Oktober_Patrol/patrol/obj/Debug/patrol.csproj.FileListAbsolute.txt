@@ -1,6 +1,0 @@
-c:\users\dell\documents\visual studio 2013\Projects\patrol\patrol\bin\Debug\patrol.exe.config
-c:\users\dell\documents\visual studio 2013\Projects\patrol\patrol\bin\Debug\patrol.exe
-c:\users\dell\documents\visual studio 2013\Projects\patrol\patrol\bin\Debug\patrol.pdb
-c:\users\dell\documents\visual studio 2013\Projects\patrol\patrol\obj\Debug\patrol.csprojResolveAssemblyReference.cache
-c:\users\dell\documents\visual studio 2013\Projects\patrol\patrol\obj\Debug\patrol.exe
-c:\users\dell\documents\visual studio 2013\Projects\patrol\patrol\obj\Debug\patrol.pdb
