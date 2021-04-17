@@ -6,7 +6,7 @@
 |2015  |Május | Táncrend|   **Python**    |
 |2014  |Október      | Nézőtér |    **Python**   |
 |2014  |Május       | Céllövészet |    **C#**   |
-|2013  |Október      | Nézőtér |    **C#**  |
+|2013  |Október      | Patrol|    **C#**  |
 |2013  |Május      | Választás |    **C#**  |
 |2013  |Május      | Számok |    **C#**  |
 |2006  |Október      | Zeneiadók |    **C#**  |
