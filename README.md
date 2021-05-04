@@ -3,6 +3,7 @@
 | Év | Hónap| Cím   | Nyelv |
 |---- | ------ | ------------| --------|
 |2020  |Május  | Meteorológiai jelentés | **Python** |
+|2018  |Május | Társalgó | **Python** |
 |2015  |Május | Táncrend|   **Python**    |
 |2014  |Október      | Nézőtér |    **Python**   |
 |2014  |Május       | Céllövészet |    **C#**   |
